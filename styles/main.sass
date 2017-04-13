@@ -1,0 +1,40 @@
+$red: red
+$yellow: yellow
+$green: green
+$margin: 0 auto
+
+body
+    background-image: url(http://wallpaperpulse.com/img/705241.jpg)
+    
+.block
+    width: 30px
+    height: 50px
+    margin: 50px auto 0 auto
+    background-color: black
+
+.container
+    background-color: black
+    width: 100px
+    height: 260px
+    margin: $margin
+
+.light
+    height: 75px
+    width: 75px
+    border-radius: 50%
+    margin: $margin
+    &.red:hover
+        box-shadow: 0 0 50px $red, 0 0 100px $red, 0 0 100px $red, 0 0 100px $red
+    &.yellow:hover
+        box-shadow: 0 0 50px $yellow, 0 0 100px $yellow, 0 0 100px $yellow, 0 0 100px $yellow
+    &.green:hover
+        box-shadow: 0 0 50px $green, 0 0 100px $green, 0 0 100px $green, 0 0 100px $green
+
+.red
+    background-color: $red
+
+.yellow
+    background-color: $yellow
+
+.green
+    background-color: $green
